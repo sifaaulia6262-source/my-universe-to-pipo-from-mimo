@@ -9,3 +9,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("My Universe Loaded ❤️");
 });
+const startButton = document.getElementById("startJourney");
+
+if (startButton) {
+    startButton.addEventListener("click", () => {
+        document
+            .getElementById("chapter-1")
+            .scrollIntoView({
+                behavior: "smooth"
+            });
+    });
+}
