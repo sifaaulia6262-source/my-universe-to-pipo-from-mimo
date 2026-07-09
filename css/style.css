@@ -22,3 +22,49 @@ body{
     color:#ffffff;
     overflow-x:hidden;
 }
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 24px;
+}
+
+.hero-content{
+    max-width:760px;
+}
+
+.hero-overline{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    opacity:.8;
+    margin-bottom:16px;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.hero h2{
+    font-size:28px;
+    font-weight:400;
+    margin-bottom:32px;
+}
+
+.hero-description{
+    line-height:1.8;
+    opacity:.9;
+    margin-bottom:40px;
+}
+
+#startJourney{
+    padding:16px 36px;
+    border:none;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:16px;
+}
