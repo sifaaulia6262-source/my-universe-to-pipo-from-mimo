@@ -1,4 +1,3 @@
-// My Universe JavaScript
 /*
 ==========================================
  My Universe — To Pipo, From Mimo
@@ -6,3 +5,7 @@
  Version: 1.0.0
 ==========================================
 */
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("My Universe Loaded ❤️");
+});
