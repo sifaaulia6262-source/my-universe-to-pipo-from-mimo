@@ -20,3 +20,11 @@ if (startButton) {
             });
     });
 }
+const enterButton = document.getElementById("enterUniverse");
+const welcomeScreen = document.getElementById("welcome");
+
+if (enterButton && welcomeScreen) {
+    enterButton.addEventListener("click", () => {
+        welcomeScreen.classList.add("hidden");
+    });
+}
