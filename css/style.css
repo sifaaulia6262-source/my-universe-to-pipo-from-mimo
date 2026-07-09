@@ -107,3 +107,52 @@ body{
     border-radius:999px;
     cursor:pointer;
 }
+/* ==========================
+   PRELOADER
+========================== */
+
+#preloader{
+    position:fixed;
+    inset:0;
+    background:#08111F;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:10000;
+    transition:opacity .8s ease;
+}
+
+#preloader.hidden{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-circle{
+    width:70px;
+    height:70px;
+    border:4px solid rgba(255,255,255,.2);
+    border-top:4px solid #ffffff;
+    border-radius:50%;
+    margin:0 auto 24px;
+    animation:spin 1s linear infinite;
+}
+
+.loader-content h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.loader-content p{
+    opacity:.8;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
