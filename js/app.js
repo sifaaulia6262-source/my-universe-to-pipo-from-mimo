@@ -43,3 +43,14 @@ window.addEventListener("load", () => {
     }, 1500);
 
 });
+/* ==========================
+   ACTIVE NAVIGATION
+========================== */
+
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        console.log(`Navigate to ${link.getAttribute("href")}`);
+    });
+});
