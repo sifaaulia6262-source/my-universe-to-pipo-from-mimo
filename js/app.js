@@ -171,3 +171,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================
+   GIFT SECTION
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const giftCards = document.querySelectorAll(
+        "#gift-section .gift-card"
+    );
+
+    const giftObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.2
+
+    });
+
+    giftCards.forEach(card => {
+
+        card.classList.add("hidden");
+
+        giftObserver.observe(card);
+
+    });
+
+});
