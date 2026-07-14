@@ -54,3 +54,40 @@ navLinks.forEach(link => {
         console.log(`Navigate to ${link.getAttribute("href")}`);
     });
 });
+/* =========================================
+   CHAPTER 2
+   ========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const chapterTwoItems = document.querySelectorAll(
+        "#chapter2 .gallery-item"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },{
+
+        threshold:0.15
+
+    });
+
+    chapterTwoItems.forEach(item=>{
+
+        item.classList.add("hidden");
+
+        observer.observe(item);
+
+    });
+
+});
