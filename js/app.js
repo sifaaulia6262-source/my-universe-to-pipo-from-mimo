@@ -91,3 +91,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================
+   LIGHTBOX
+========================================= */
+
+const galleryImages =
+document.querySelectorAll(".gallery-item img");
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImage =
+document.getElementById("lightbox-image");
+
+const closeButton =
+document.querySelector(".lightbox-close");
+
+galleryImages.forEach(image=>{
+
+image.addEventListener("click",()=>{
+
+lightbox.classList.add("active");
+
+lightboxImage.src=image.src;
+
+});
+
+});
+
+closeButton.addEventListener("click",()=>{
+
+lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+if(e.target===lightbox){
+
+lightbox.classList.remove("active");
+
+}
+
+});
