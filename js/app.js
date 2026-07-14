@@ -14,7 +14,7 @@ const startButton = document.getElementById("startJourney");
 if (startButton) {
     startButton.addEventListener("click", () => {
         document
-            .getElementById("chapter-1")
+            .getElementById("chapter1")
             .scrollIntoView({
                 behavior: "smooth"
             });
