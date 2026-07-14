@@ -727,3 +727,81 @@ line-height:1.8;
 }
 
 }
+/* ========================================= */
+/* PRAYER SECTION */
+/* ========================================= */
+
+.prayer-section{
+
+    width:100%;
+
+    padding:120px 8%;
+
+    background:linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #ffffff 100%
+    );
+
+}
+
+.prayer-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.prayer-card{
+
+    margin-top:50px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:60px 50px;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.prayer-card p{
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    color:#4b5563;
+
+    margin-bottom:22px;
+
+}
+
+@media(max-width:768px){
+
+.prayer-section{
+
+padding:90px 24px;
+
+}
+
+.prayer-card{
+
+padding:35px 25px;
+
+}
+
+.prayer-card p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+}
