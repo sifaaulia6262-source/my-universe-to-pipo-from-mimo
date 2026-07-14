@@ -237,3 +237,121 @@ body{
 .photo:hover{
     transform:translateY(-8px);
 }
+/* ========================================= */
+/* CHAPTER 2 */
+/* ========================================= */
+
+.chapter-2{
+    width:100%;
+    padding:120px 8%;
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fbff 100%
+    );
+}
+
+.chapter-2 .chapter-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.chapter-2 .chapter-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.chapter-number{
+    display:inline-block;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:.85rem;
+    color:#7d8da1;
+    margin-bottom:12px;
+}
+
+.chapter-2 h2{
+    font-size:2.6rem;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:18px;
+}
+
+.chapter-description{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#5b6472;
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(260px,1fr));
+
+    gap:22px;
+
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:#fff;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.6s ease;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.chapter-2{
+
+padding:90px 24px;
+
+}
+
+.chapter-2 h2{
+
+font-size:2rem;
+
+}
+
+.gallery-grid{
+
+gap:16px;
+
+}
+
+}
