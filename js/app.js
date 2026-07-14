@@ -208,3 +208,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================
+   LOVE LETTER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const letterCard = document.querySelector("#love-letter .letter-card");
+
+    if (!letterCard) return;
+
+    const letterObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.25
+
+    });
+
+    letterCard.classList.add("hidden");
+
+    letterObserver.observe(letterCard);
+
+});
