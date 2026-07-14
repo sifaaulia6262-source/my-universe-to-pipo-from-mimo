@@ -805,3 +805,78 @@ line-height:1.8;
 }
 
 }
+/* ========================================= */
+/* ENDING SECTION */
+/* ========================================= */
+
+.ending-section{
+
+    width:100%;
+
+    padding:140px 8%;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #eef6ff 100%
+    );
+
+}
+
+.ending-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.ending-text{
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    color:#4b5563;
+
+    margin:22px 0;
+
+}
+
+.ending-signature{
+
+    margin-top:60px;
+
+    font-size:2rem;
+
+    color:#1f2937;
+
+    font-weight:700;
+
+}
+
+@media(max-width:768px){
+
+.ending-section{
+
+padding:90px 24px;
+
+}
+
+.ending-text{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+.ending-signature{
+
+font-size:1.6rem;
+
+}
+
+}
