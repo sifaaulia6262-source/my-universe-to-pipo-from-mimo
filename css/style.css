@@ -67,6 +67,11 @@ body{
     border-radius:999px;
     cursor:pointer;
     font-size:16px;
+    transition:all .3s ease;
+}
+
+#startJourney:hover{
+    transform:translateY(-3px);
 }
 .welcome-screen{
     position:fixed;
