@@ -639,3 +639,91 @@ font-size:2rem;
     line-height:1.7;
 
 }
+/* ========================================= */
+/* LOVE LETTER */
+/* ========================================= */
+
+.love-letter{
+
+    width:100%;
+
+    padding:120px 8%;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fbff 100%
+    );
+
+}
+
+.letter-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.letter-card{
+
+    margin-top:50px;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:60px 50px;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.letter-card p{
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    color:#4b5563;
+
+    margin-bottom:22px;
+
+}
+
+.signature{
+
+    margin-top:40px;
+
+    font-weight:600;
+
+    color:#111827;
+
+}
+
+@media(max-width:768px){
+
+.love-letter{
+
+padding:90px 24px;
+
+}
+
+.letter-card{
+
+padding:35px 25px;
+
+}
+
+.letter-card p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+}
