@@ -134,3 +134,40 @@ lightbox.classList.remove("active");
 }
 
 });
+/* =========================================
+   CHAPTER 3
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const chapterThreeItems = document.querySelectorAll(
+        "#chapter3 .gallery-item"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.15
+
+    });
+
+    chapterThreeItems.forEach(item => {
+
+        item.classList.add("hidden");
+
+        observer.observe(item);
+
+    });
+
+});
