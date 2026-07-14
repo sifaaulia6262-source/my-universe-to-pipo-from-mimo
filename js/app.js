@@ -274,3 +274,36 @@ document.addEventListener("DOMContentLoaded", () => {
     prayerObserver.observe(prayerCard);
 
 });
+/* =========================================
+   ENDING
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const endingContainer = document.querySelector("#ending .ending-container");
+
+    if (!endingContainer) return;
+
+    const endingObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.25
+
+    });
+
+    endingContainer.classList.add("hidden");
+
+    endingObserver.observe(endingContainer);
+
+});
