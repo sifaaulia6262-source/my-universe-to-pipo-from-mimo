@@ -376,3 +376,58 @@ opacity:1;
 transform:translateY(0);
 
 }
+/* ========================================= */
+/* LIGHTBOX */
+/* ========================================= */
+
+.lightbox{
+
+position:fixed;
+
+inset:0;
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+background:rgba(0,0,0,.9);
+
+z-index:9999;
+
+padding:40px;
+
+}
+
+.lightbox.active{
+
+display:flex;
+
+}
+
+.lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:18px;
+
+}
+
+.lightbox-close{
+
+position:absolute;
+
+top:25px;
+
+right:35px;
+
+font-size:42px;
+
+cursor:pointer;
+
+color:#fff;
+
+}
