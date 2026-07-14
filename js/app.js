@@ -113,7 +113,8 @@ image.addEventListener("click",()=>{
 
 lightbox.classList.add("active");
 
-lightboxImage.src=image.src;
+lightboxImage.src = image.src;
+lightboxImage.alt = image.alt;
 
 });
 
