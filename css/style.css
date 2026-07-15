@@ -1335,3 +1335,62 @@ font-size:2rem;
     }
 
 }
+/* ========================================= */
+/* HERO CONTENT ANIMATION */
+/* ========================================= */
+
+.hero-content{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:heroFade 2s ease forwards;
+
+    animation-delay:.8s;
+
+}
+
+.hero-content h1{
+
+    animation-delay:1s;
+
+}
+
+.hero-content h2{
+
+    animation-delay:1.4s;
+
+}
+
+.hero-description{
+
+    animation-delay:1.8s;
+
+}
+
+#startJourney{
+
+    animation-delay:2.3s;
+
+}
+
+@keyframes heroFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
