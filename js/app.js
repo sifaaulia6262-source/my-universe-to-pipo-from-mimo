@@ -308,3 +308,48 @@ document.addEventListener("DOMContentLoaded", () => {
     endingObserver.observe(endingContainer);
 
 });
+/* =========================================
+   VIDEO MEMORIES PLAYLIST
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const video = document.getElementById("memoryVideo");
+
+    if (!video) return;
+
+    const playlist = [
+
+        "assets/videos/when-we-meet-bandung.mp4",
+
+        "assets/videos/night-riding-bandung.mp4",
+
+        "assets/videos/menunggu-pesanan.mp4",
+
+        "assets/videos/celebrate-my-birthday.mp4",
+
+        "assets/videos/sebelum-satgas.mp4",
+
+        "assets/videos/mimo-menunggu-kereta.mp4"
+
+    ];
+
+    let currentVideo = 0;
+
+    video.addEventListener("ended", () => {
+
+        currentVideo++;
+
+        if (currentVideo < playlist.length) {
+
+            video.src = playlist[currentVideo];
+
+            video.load();
+
+            video.play();
+
+        }
+
+    });
+
+});
