@@ -244,6 +244,10 @@ body{
 .photo:hover{
     transform:translateY(-8px);
 }
+.chapter-container{
+    max-width:1200px;
+    margin:auto;
+}
 /* ========================================= */
 /* CHAPTER 2 */
 /* ========================================= */
@@ -256,11 +260,6 @@ body{
         #ffffff 0%,
         #f8fbff 100%
     );
-}
-
-.chapter-2 .chapter-container{
-    max-width:1200px;
-    margin:auto;
 }
 
 .chapter-2 .chapter-header{
@@ -455,12 +454,6 @@ color:#fff;
     );
 
 }
-
-.chapter-3 .chapter-container{
-
-    max-width:1200px;
-
-    margin:auto;
 
 }
 
