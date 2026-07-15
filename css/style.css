@@ -235,38 +235,65 @@ body{
 }
 
 .hero-overline{
+
     letter-spacing:4px;
     text-transform:uppercase;
-    opacity:.8;
+    opacity:0;
     margin-bottom:16px;
+
+    animation:heroItem .8s ease forwards;
+    animation-delay:1.2s;
+
 }
 
 .hero h1{
+
     font-family:'Cormorant Garamond',serif;
     font-size:72px;
     font-weight:700;
     margin-bottom:12px;
+
+    opacity:0;
+    animation:heroItem .8s ease forwards;
+    animation-delay:1.6s;
+
 }
 
 .hero h2{
+
     font-size:28px;
     font-weight:400;
     margin-bottom:32px;
+
+    opacity:0;
+    animation:heroItem .8s ease forwards;
+    animation-delay:2s;
+
 }
 
 .hero-description{
+
     line-height:1.8;
-    opacity:.9;
     margin-bottom:40px;
+
+    opacity:0;
+    animation:heroItem .8s ease forwards;
+    animation-delay:2.4s;
+
 }
 
 #startJourney{
+
     padding:16px 36px;
     border:none;
     border-radius:999px;
     cursor:pointer;
     font-size:16px;
-    transition:all .3s ease;
+
+    opacity:0;
+    animation:heroItem .8s ease forwards;
+    animation-delay:2.8s;
+
 }
 
 #startJourney:hover{
@@ -1389,6 +1416,23 @@ font-size:2rem;
 
         opacity:1;
 
+        transform:translateY(0);
+
+    }
+
+}
+@keyframes heroItem{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
         transform:translateY(0);
 
     }
