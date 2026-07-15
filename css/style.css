@@ -33,7 +33,25 @@ body{
     padding:120px 24px 80px;
 }
 
+/* ===== Hero Background Layer ===== */
+
+.hero-background{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    z-index:0;
+}
+
+.stars,
+.nebula,
+.moon-glow{
+    position:absolute;
+    inset:0;
+}
+
 .hero-content{
+    position:relative;
+    z-index:2;
     max-width:760px;
     margin-top:60px;
 }
