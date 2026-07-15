@@ -353,3 +353,52 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* =========================================
+   VIDEO ENDING
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const video = document.getElementById("memoryVideo");
+    const ending = document.getElementById("videoEnding");
+    const button = document.getElementById("continueJourney");
+
+    if (!video) return;
+
+    const playlist = [
+
+        "assets/videos/when-we-meet-bandung.mp4",
+        "assets/videos/night-riding-bandung.mp4",
+        "assets/videos/menunggu-pesanan.mp4",
+        "assets/videos/celebrate-my-birthday.mp4",
+        "assets/videos/sebelum-satgas.mp4",
+        "assets/videos/mimo-menunggu-kereta.mp4"
+
+    ];
+
+    video.addEventListener("ended", () => {
+
+        const currentSrc = video.currentSrc;
+
+        if(currentSrc.includes(playlist[playlist.length-1])){
+
+            ending.classList.add("active");
+
+        }
+
+    });
+
+    button.addEventListener("click",()=>{
+
+        document
+        .getElementById("gift-section")
+        .scrollIntoView({
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+});
