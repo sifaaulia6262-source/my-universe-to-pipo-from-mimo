@@ -145,6 +145,88 @@ body{
     animation:shootingStar 10s linear infinite;
 
 }
+
+/* ===== Floating Particles ===== */
+
+.particles{
+
+    position:absolute;
+    inset:0;
+
+}
+
+.particles span{
+
+    position:absolute;
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.75);
+
+    animation:floatParticle 14s linear infinite;
+
+}
+.particles span:nth-child(1){
+
+    left:12%;
+    bottom:-20px;
+
+    animation-delay:0s;
+
+}
+
+.particles span:nth-child(2){
+
+    left:28%;
+
+    bottom:-30px;
+
+    animation-delay:2s;
+
+}
+
+.particles span:nth-child(3){
+
+    left:46%;
+
+    bottom:-20px;
+
+    animation-delay:4s;
+
+}
+
+.particles span:nth-child(4){
+
+    left:63%;
+
+    bottom:-25px;
+
+    animation-delay:6s;
+
+}
+
+.particles span:nth-child(5){
+
+    left:80%;
+
+    bottom:-20px;
+
+    animation-delay:8s;
+
+}
+
+.particles span:nth-child(6){
+
+    left:92%;
+
+    bottom:-30px;
+
+    animation-delay:10s;
+
+}
 .hero-content{
     position:relative;
     z-index:2;
@@ -1065,6 +1147,35 @@ font-size:1.6rem;
     100%{
 
         transform:translateX(1400px) translateY(500px) rotate(-25deg);
+
+        opacity:0;
+
+    }
+
+}
+@keyframes floatParticle{
+
+    from{
+
+        transform:
+            translateY(0)
+            scale(.6);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(-900px)
+            scale(1.4);
 
         opacity:0;
 
