@@ -23,23 +23,33 @@ body{
     overflow-x:hidden;
 }
 .hero{
+
     position:relative;
     overflow:hidden;
+
+    isolation:isolate;
+
     min-height:100vh;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    text-align:center;
-    padding:120px 24px 80px;
+
 }
 
 /* ===== Hero Background Layer ===== */
 
 .hero-background{
+
     position:absolute;
     inset:0;
     overflow:hidden;
     z-index:0;
+
+    pointer-events:none;
+
 }
 
 .stars,
@@ -283,6 +293,9 @@ body{
 }
 
 #startJourney{
+ transition:
+    transform .3s ease,
+    box-shadow .3s ease;
 
     padding:16px 36px;
     border:none;
@@ -297,7 +310,11 @@ body{
 }
 
 #startJourney:hover{
+
     transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(255,255,255,.18);
+
 }
 .welcome-screen{
     position:fixed;
