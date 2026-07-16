@@ -402,3 +402,62 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================
+   PREMIUM LIGHTBOX NAVIGATION
+========================================= */
+
+const images = Array.from(
+    document.querySelectorAll(".gallery-item img")
+);
+
+const prevButton = document.querySelector(".lightbox-prev");
+const nextButton = document.querySelector(".lightbox-next");
+
+let currentIndex = 0;
+
+images.forEach((image, index) => {
+
+    image.addEventListener("click", () => {
+
+        currentIndex = index;
+
+        lightboxImage.src = images[currentIndex].src;
+        lightboxImage.alt = images[currentIndex].alt;
+
+    });
+
+});
+
+prevButton.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    currentIndex--;
+
+    if(currentIndex < 0){
+
+        currentIndex = images.length - 1;
+
+    }
+
+    lightboxImage.src = images[currentIndex].src;
+    lightboxImage.alt = images[currentIndex].alt;
+
+});
+
+nextButton.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    currentIndex++;
+
+    if(currentIndex >= images.length){
+
+        currentIndex = 0;
+
+    }
+
+    lightboxImage.src = images[currentIndex].src;
+    lightboxImage.alt = images[currentIndex].alt;
+
+});
