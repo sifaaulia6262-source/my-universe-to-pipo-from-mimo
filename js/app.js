@@ -37,7 +37,11 @@ if (enterButton && welcomeScreen){
 
             bgMusic.volume = 0.25;
 
-            bgMusic.play();
+           bgMusic.play().then(() => {
+    console.log("Music started");
+}).catch((err) => {
+    console.error("Music failed:", err);
+});
 
             musicToggle.textContent="🔊";
 
@@ -544,7 +548,11 @@ if(bgMusic && musicToggle){
 
         if(bgMusic.paused){
 
-            bgMusic.play();
+            bgMusic.play().then(() => {
+    console.log("Music started");
+}).catch((err) => {
+    console.error("Music failed:", err);
+});
 
             musicToggle.textContent="🔊";
 
