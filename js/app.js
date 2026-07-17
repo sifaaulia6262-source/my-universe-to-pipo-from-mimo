@@ -23,10 +23,28 @@ if (startButton) {
 const enterButton = document.getElementById("enterUniverse");
 const welcomeScreen = document.getElementById("welcome");
 
-if (enterButton && welcomeScreen) {
-    enterButton.addEventListener("click", () => {
+const bgMusic = document.getElementById("bgMusic");
+
+const musicToggle = document.getElementById("musicToggle");
+
+if (enterButton && welcomeScreen){
+
+    enterButton.addEventListener("click",()=>{
+
         welcomeScreen.classList.add("hidden");
+
+        if(bgMusic){
+
+            bgMusic.volume = 0.25;
+
+            bgMusic.play();
+
+            musicToggle.textContent="🔊";
+
+        }
+
     });
+
 }
 /* ==========================
    PRELOADER
@@ -516,3 +534,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================
+   MUSIC TOGGLE
+========================================= */
+
+if(bgMusic && musicToggle){
+
+    musicToggle.addEventListener("click",()=>{
+
+        if(bgMusic.paused){
+
+            bgMusic.play();
+
+            musicToggle.textContent="🔊";
+
+        }else{
+
+            bgMusic.pause();
+
+            musicToggle.textContent="🔇";
+
+        }
+
+    });
+
+}
