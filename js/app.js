@@ -476,3 +476,20 @@ if (envelope) {
     });
 
 }
+/* =========================================
+   LOVE LETTER ENVELOPE
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const envelope = document.querySelector(".envelope");
+
+    if (!envelope) return;
+
+    envelope.addEventListener("click", () => {
+
+        envelope.classList.toggle("open");
+
+    });
+
+});
