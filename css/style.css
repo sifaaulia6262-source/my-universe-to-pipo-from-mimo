@@ -1603,3 +1603,68 @@ font-size:2rem;
     transition:transform .8s ease;
 
 }
+/* ========================================= */
+/* FOOTER PREMIUM */
+/* ========================================= */
+
+.footer-premium{
+
+    padding:80px 20px;
+
+    background:linear-gradient(
+        180deg,
+        #08111F 0%,
+        #040912 100%
+    );
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-container h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin-bottom:16px;
+
+}
+
+.footer-container p{
+
+    font-size:18px;
+
+    color:rgba(255,255,255,.85);
+
+    margin-bottom:20px;
+
+}
+
+.footer-container span{
+
+    display:block;
+
+    color:rgba(255,255,255,.55);
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+}
