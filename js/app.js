@@ -493,3 +493,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =========================================
+   RESTART JOURNEY
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const restartButton = document.getElementById("restartJourney");
+
+    if (!restartButton) return;
+
+    restartButton.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+});
