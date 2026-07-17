@@ -461,3 +461,18 @@ nextButton.addEventListener("click", (e) => {
     lightboxImage.alt = images[currentIndex].alt;
 
 });
+/* =========================================
+   LOVE LETTER ENVELOPE
+========================================= */
+
+const envelope = document.querySelector(".envelope");
+
+if (envelope) {
+
+    envelope.addEventListener("click", () => {
+
+        envelope.classList.toggle("open");
+
+    });
+
+}
