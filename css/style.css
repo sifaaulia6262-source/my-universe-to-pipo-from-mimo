@@ -1784,3 +1784,81 @@ font-size:2rem;
     background:rgba(255,255,255,.25);
 
 }
+/* =========================================
+   BEFORE THIS JOURNEY ENDS
+========================================= */
+
+.before-ending{
+
+    padding:140px 8%;
+
+    background:linear-gradient(
+        180deg,
+        #08111F 0%,
+        #111C2F 100%
+    );
+
+}
+
+.before-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.before-container h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    color:#ffffff;
+
+    margin:20px 0 60px;
+
+}
+
+.before-card{
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    padding:60px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.before-card p{
+
+    color:rgba(255,255,255,.88);
+
+    line-height:2;
+
+    margin-bottom:22px;
+
+    font-size:18px;
+
+}
+
+.before-card .signature{
+
+    margin-top:40px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:28px;
+
+    color:#ffffff;
+
+}
