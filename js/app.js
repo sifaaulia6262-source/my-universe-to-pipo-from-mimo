@@ -567,3 +567,36 @@ if(bgMusic && musicToggle){
     });
 
 }
+/* =========================================
+   BEFORE THIS JOURNEY ENDS
+========================================= */
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+    const beforeCard=document.querySelector(".before-card");
+
+    if(!beforeCard) return;
+
+    const observer=new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },{
+
+        threshold:0.2
+
+    });
+
+    beforeCard.classList.add("hidden");
+
+    observer.observe(beforeCard);
+
+});
