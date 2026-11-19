@@ -1862,3 +1862,74 @@ font-size:2rem;
     color:#ffffff;
 
 }
+
+/* ========================================= /
+/ CHAPTER 4 — TWO DAYS IN GARUT /
+/ ========================================= */
+
+.chapter-4 {
+width: 100%;
+padding: 130px 8%;
+background: linear-gradient(
+180deg,
+#ffffff 0%,
+#f8fbff 100%
+);
+}
+
+.chapter-4 .chapter-container {
+max-width: 1200px;
+margin: auto;
+}
+
+.chapter-4 .chapter-header {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.chapter-4 .chapter-number {
+display: inline-block;
+letter-spacing: 5px;
+text-transform: uppercase;
+font-size: .85rem;
+color: #9a8290;
+margin-bottom: 18px;
+}
+
+.chapter-4 h2 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 3.4rem;
+font-weight: 600;
+color: #263447;
+margin-bottom: 18px;
+}
+
+.chapter-4 .chapter-description {
+max-width: 700px;
+margin: auto;
+line-height: 1.9;
+color: #7b8491;
+font-size: 1rem;
+}
+
+.chapter-4 .chapter-date {
+margin-top: 25px;
+color: #a58b91;
+letter-spacing: 3px;
+font-size: .8rem;
+text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+.chapter-4 {
+padding: 90px 24px;
+}
+
+.chapter-4 h2 {
+    font-size: 2.4rem;
+}
+.chapter-4 .chapter-description {
+    font-size: .95rem;
+}
+
+}
