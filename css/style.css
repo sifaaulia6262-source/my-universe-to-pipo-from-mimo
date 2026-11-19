@@ -2085,3 +2085,121 @@ padding: 90px 24px;
         border-radius: 14px;
     }
 }
+
+
+/* ========================================= /
+/ CHAPTER 4 — GARUT VIDEO MEMORIES /
+/ ========================================= */
+
+.garut-video-section {
+position: relative;
+padding: 100px 7%;
+background: linear-gradient(180deg, #101a35 0%, #172440 100%);
+color: #fff;
+overflow: hidden;
+}
+
+.garut-video-container {
+max-width: 1150px;
+margin: 0 auto;
+text-align: center;
+}
+
+.garut-video-section .chapter-number {
+display: inline-block;
+color: #e8b9c9;
+font-size: 12px;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 18px;
+}
+
+.garut-video-section h2 {
+font-family: inherit;
+font-size: clamp(32px, 5vw, 48px);
+font-weight: 400;
+letter-spacing: 1px;
+margin-bottom: 20px;
+color: #fff;
+}
+
+.garut-video-description {
+max-width: 650px;
+margin: 0 auto 55px;
+color: rgba(255, 255, 255, 0.75);
+font-size: 15px;
+line-height: 1.9;
+}
+
+.garut-video-gallery {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+align-items: start;
+}
+
+.garut-video-card {
+padding: 14px;
+border: 1px solid rgba(232, 185, 201, 0.28);
+border-radius: 18px;
+background: rgba(255, 255, 255, 0.055);
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.garut-video-card:hover {
+transform: translateY(-6px);
+border-color: rgba(232, 185, 201, 0.7);
+}
+
+.garut-video-card h3 {
+color: #e8b9c9;
+font-size: 15px;
+font-weight: 400;
+letter-spacing: 2px;
+margin: 8px 0 16px;
+}
+
+.garut-video-card video {
+display: block;
+width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: contain;
+background: #080d19;
+border-radius: 10px;
+}
+
+.garut-video-closing {
+margin-top: 45px;
+color: #e8b9c9;
+font-size: 14px;
+letter-spacing: 1px;
+line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+.garut-video-section {
+padding: 75px 6%;
+}
+
+.garut-video-gallery {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.garut-video-description {
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+.garut-video-card {
+    padding: 12px;
+}
+.garut-video-closing {
+    margin-top: 32px;
+    font-size: 13px;
+}
+
+}
