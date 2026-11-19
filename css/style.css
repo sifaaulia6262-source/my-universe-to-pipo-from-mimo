@@ -1994,3 +1994,32 @@ padding: 90px 24px;
         font-size: 2rem;
     }
 }
+
+/* ========================================= */
+/* CHAPTER 4 — ELEGANT STORY CARDS */
+/* ========================================= */
+
+.chapter-4 {
+    background: linear-gradient(
+        180deg,
+        #edf5fc 0%,
+        #f8fbff 100%
+    );
+}
+
+.chapter-4 .chapter-story,
+.chapter-4 .chapter-story-block {
+    background: #ffffff;
+    padding: 45px 55px;
+    border: 1px solid #e5edf5;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(40, 65, 95, 0.06);
+}
+
+@media (max-width: 768px) {
+    .chapter-4 .chapter-story,
+    .chapter-4 .chapter-story-block {
+        padding: 30px 22px;
+        border-radius: 18px;
+    }
+}
